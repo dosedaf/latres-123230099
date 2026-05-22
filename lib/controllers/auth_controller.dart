@@ -10,7 +10,7 @@ class AuthController extends GetxController {
   void login(String username, String password) async {
     final prefs = await SharedPreferences.getInstance();
 
-    if (username == 'admin' && password == 'admin123') {
+    if (username == 'tpm' && password == '123230099') {
       await prefs.setBool('isLoggedIn', true);
       isLoggedIn.value = true;
 
